@@ -1,0 +1,12 @@
+
+#tbordprod{
+	border-collapse: collapse;
+}
+#tbordprod td{
+	border: 1px solid black;
+}
+.tdright {
+	text-align: right;
+}
+
+

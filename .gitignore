@@ -1,0 +1,11 @@
+# Pastas de dependências e temporários
+node_modules/
+vendor/
+bin/
+obj/
+.vs/
+*.log
+
+# Arquivos de configuração local (senhas de banco de dados, etc)
+config.php
+appsettings.json
