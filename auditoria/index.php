@@ -27,30 +27,68 @@
 		}
 
 		.header {
-			background: rgba(255, 255, 255, 0.95);
-			border-radius: 15px;
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 248, 255, 0.95) 100%);
+			border-radius: 20px;
 			padding: 40px;
 			margin-bottom: 40px;
-			border: 1px solid rgba(11, 29, 63, 0.2);
-			box-shadow: 0 20px 60px rgba(11, 29, 63, 0.12);
-			text-align: center;
-			border-bottom: 3px solid rgba(11, 29, 63, 0.2);
+			border: 1px solid rgba(11, 29, 63, 0.15);
+			box-shadow: 0 15px 35px rgba(11, 29, 63, 0.08), 0 5px 15px rgba(11, 29, 63, 0.05);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 25px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.header::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(45deg, transparent 30%, rgba(11, 29, 63, 0.02) 50%, transparent 70%);
+			pointer-events: none;
+		}
+
+		.logo {
+			width: 120px;
+			height: auto;
+			margin-bottom: 25px;
+			filter: drop-shadow(0 4px 8px rgba(11, 29, 63, 0.1));
+			transition: transform 0.3s ease;
+		}
+
+		.logo:hover {
+			transform: scale(1.05);
 		}
 
 		.company-name {
-			font-size: 1.8em;
-			font-weight: 700;
-			color: #0b1d3f;
-			letter-spacing: 2px;
-			text-shadow: 0 4px 10px rgba(11, 29, 63, 0.15);
-			margin-bottom: 10px;
+			background: linear-gradient(45deg, #0b1d3f, #1e3a5f);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			font-size: 2.2em;
+			font-weight: 800;
+			letter-spacing: 3px;
+			margin-bottom: 15px;
+			position: relative;
+			z-index: 1;
 		}
 
 		.page-title {
-			font-size: 1.3em;
-			color: rgba(11, 29, 63, 0.75);
-			letter-spacing: 1px;
-			font-weight: 400;
+			font-size: 1.1em;
+			color: rgba(11, 29, 63, 0.7);
+			letter-spacing: 1.5px;
+			font-weight: 500;
+			position: relative;
+			z-index: 1;
+		}
+
+		.header-text {
+			flex: 1;
+			text-align: left;
 		}
 
 		.back-button {
@@ -146,14 +184,26 @@
 		@media (max-width: 768px) {
 			.header {
 				padding: 30px 20px;
+				flex-direction: column;
+				text-align: center;
+				gap: 15px;
+			}
+
+			.logo {
+				width: 80px;
+				margin-bottom: 0;
 			}
 
 			.company-name {
-				font-size: 1.3em;
+				font-size: 1.5em;
 			}
 
 			.page-title {
 				font-size: 1em;
+			}
+
+			.header-text {
+				text-align: center;
 			}
 
 			.sections-container {
@@ -169,8 +219,11 @@
 
 	<div class="main-container">
 		<div class="header">
-			<div class="company-name">◆ R J C DEFESA E AEROESPACIAL</div>
-			<div class="page-title">Sistema de Auditoria Interna</div>
+			<img src="img/rjclogo01.png" alt="Logo RJC" class="logo">
+			<div class="header-text">
+				<div class="company-name">R J C DEFESA E AEROESPACIAL</div>
+				<div class="page-title">Sistema de Auditoria Interna</div>
+			</div>
 		</div>
 
 		<div class="sections-container">

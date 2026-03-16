@@ -227,7 +227,7 @@
 			<?php
 				echo '<div class="module-card">';
 				echo '<a href="cardex" class="module-button">📋 Kardex</a>';
-				echo '</div>';
+				echo '</div>';	
 
 				echo '<div class="module-card">';
 				echo '<a href="requisicao" class="module-button">📝 Requisições</a>';
@@ -240,7 +240,7 @@
 		</div>
 
 		<div class="footer-info">
-			<p>Gestão E Controle de Estoque • RJC Defesa Aeroespacial</p>
+			<p>Gestão e Controle de Estoque • RJC Defesa Aeroespacial</p>
 		</div>
 	</div>
 </body>

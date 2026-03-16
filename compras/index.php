@@ -50,12 +50,14 @@
 
 	.links {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 14px;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	.link-item {
-		display: inline-block;
+		display: block;
 		padding: 14px 18px;
 		background: rgba(11, 29, 63, 0.05);
 		border: 1px solid rgba(11, 29, 63, 0.2);
@@ -63,7 +65,10 @@
 		color: #0b1d3f;
 		text-decoration: none;
 		font-weight: 600;
+		font-size: 1.1em;
 		transition: all 0.25s ease;
+		flex: 1;
+		text-align: center;
 	}
 
 	.link-item:hover {
@@ -79,24 +84,24 @@
 		font-size: 0.9em;
 	}
 	.back-button {
-			position: absolute;
-			top: 20px;
-			left: 20px;
-			padding: 8px 15px;
-			background: rgba(11, 29, 63, 0.15);
-			border: 1px solid rgba(11, 29, 63, 0.3);
-			color: #0b1d3f;
-			border-radius: 8px;
-			cursor: pointer;
-			text-decoration: none;
-			font-size: 0.9em;
-			transition: all 0.3s ease;
-		}
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		padding: 8px 15px;
+		background: rgba(11, 29, 63, 0.15);
+		border: 1px solid rgba(11, 29, 63, 0.3);
+		color: #0b1d3f;
+		border-radius: 8px;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 0.9em;
+		transition: all 0.3s ease;
+	}
 
-		.back-button:hover {
-			background: rgba(11, 29, 63, 0.25);
-			border-color: rgba(11, 29, 63, 0.4);
-		}
+	.back-button:hover {
+		background: rgba(11, 29, 63, 0.25);
+		border-color: rgba(11, 29, 63, 0.4);
+	}
 
 	@media (max-width: 480px) {
 		.container {
