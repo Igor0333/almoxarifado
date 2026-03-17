@@ -19,15 +19,15 @@
 		<div class="modules-grid">
 			<?php
 				echo '<div class="module-card">';
-				echo '<a href="almoxarifado" class="module-button">📦 Almoxarifado</a>';
+				echo '<a href="almoxarifado" class="module-button"> Almoxarifado</a>';
 				echo '</div>';
 
 				echo '<div class="module-card">';
-				echo '<a href="compras" class="module-button">🛒 Compras</a>';
+				echo '<a href="compras" class="module-button"> Compras</a>';
 				echo '</div>';
 
 				echo '<div class="module-card">';
-				echo '<a href="auditoria" class="module-button">🔍 Auditoria</a>';
+				echo '<a href="auditoria" class="module-button"> Auditoria</a>';
 				echo '</div>';
 			?>
 		</div>

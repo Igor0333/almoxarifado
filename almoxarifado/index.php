@@ -12,7 +12,7 @@
 	
 	<div class="container">
 		<div class="logo-section">
-			<div class="company-name">📦 Almoxarifado</div>
+			<div class="company-name"> Almoxarifado</div>
 			<div class="company-subtitle">Gestão Inteligente de Estoque</div>
 			<div class="system-title">Sistema de Controle de Almoxarifado</div>
 		</div>
@@ -20,15 +20,15 @@
 		<div class="modules-grid">
 			<?php
 				echo '<div class="module-card">';
-				echo '<a href="cardex" class="module-button">📋 Kardex</a>';
+				echo '<a href="cardex" class="module-button"> Kardex</a>';
 				echo '</div>';	
 
 				echo '<div class="module-card">';
-				echo '<a href="requisicao" class="module-button">📝 Requisições</a>';
+				echo '<a href="requisicao" class="module-button"> Requisições</a>';
 				echo '</div>';
 
 				echo '<div class="module-card">';
-				echo '<a href="inventario" class="module-button">🔍 Inventário</a>';
+				echo '<a href="inventario" class="module-button"> Inventário</a>';
 				echo '</div>';
 			?>
 		</div>
